@@ -1,10 +1,11 @@
-import { Component } from 'react'
+import { Component } from 'react';
 import './App.css';
 import { CartList } from './components/cart_list/cart_list.component.jsx';
+import { SearchBox } from './components/search_box/search_box.component.jsx';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = {
       cats: [],
@@ -19,6 +20,10 @@ class App extends Component {
     .catch(err => console.log(err));
   }
 
+  handleChange = e => {
+    this.setState({ searchValue: e.target.value });
+  }
+
   render() {
     const { cats, searchValue } = this.state;
     const filteredCats = cats.filter(cat => 
@@ -26,10 +31,8 @@ class App extends Component {
     )
     return (
       <div className="App">
-        <input type='search' placeholder='search cats'
-        onChange={e => this.setState({ searchValue: e.target.value })}>
-          
-        </input>
+        <SearchBox placeholder='Search'
+          handleChange={this.handleChange}/>
         <CartList cats={filteredCats}></CartList>        
       </div>
     );
