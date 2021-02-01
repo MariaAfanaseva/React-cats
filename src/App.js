@@ -31,6 +31,7 @@ class App extends Component {
     )
     return (
       <div className="App">
+        <h1 className='title'> Super carts </h1>
         <SearchBox placeholder='Search'
           handleChange={this.handleChange}/>
         <CartList cats={filteredCats}></CartList>        
