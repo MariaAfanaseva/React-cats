@@ -1,5 +1,6 @@
 # Getting Started with Create React App
 ## Description
+
 Single page application. Users can search from cards and add likes.</br>
 https://mariaafanaseva.github.io/react-cats/
 
