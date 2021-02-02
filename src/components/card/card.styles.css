@@ -1,4 +1,4 @@
-.cart-container {
+.card-container {
     display: flex;
     flex-direction: column;
     background-color: #95dada;
@@ -12,16 +12,16 @@
     transition: transform 0.25s ease-out;
 }
 
-.cart-container:hover{
+.card-container:hover{
     transform: scale(1.05);
 }
 
-.like{
+.add-like-button{
     padding: 10px;
     background-color: brown;
     border-radius: 20px;
 }
 
-.like:hover{
+.add-like-button:hover{
     background-color: rgb(190, 0, 0);
 }

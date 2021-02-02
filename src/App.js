@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import './App.css';
-import { CartList } from './components/cart_list/cart_list.component.jsx';
+import { CardList } from './components/card_list/card_list.component.jsx';
 import { SearchBox } from './components/search_box/search_box.component.jsx';
 
 class App extends Component {
@@ -34,7 +34,7 @@ class App extends Component {
         <h1 className='title'> Super cats </h1>
         <SearchBox placeholder='Search'
           handleChange={this.handleChange}/>
-        <CartList cats={filteredCats}></CartList>        
+        <CardList cats={filteredCats}></CardList>        
       </div>
     );
   }
