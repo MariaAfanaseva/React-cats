@@ -23,7 +23,7 @@ class App extends Component {
   handleChange = e => {
     this.setState({ searchValue: e.target.value });
   }
-
+  
   render() {
     const { cats, searchValue } = this.state;
     const filteredCats = cats.filter(cat => 
@@ -31,7 +31,7 @@ class App extends Component {
     )
     return (
       <div className="App">
-        <h1 className='title'> Super carts </h1>
+        <h1 className='title'> Super cats </h1>
         <SearchBox placeholder='Search'
           handleChange={this.handleChange}/>
         <CartList cats={filteredCats}></CartList>        
