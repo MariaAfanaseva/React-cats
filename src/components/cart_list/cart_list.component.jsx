@@ -6,6 +6,6 @@ export const CartList = (props) =>
     <div className='cart-list'>
         {
             props.cats.map(cat => 
-            <Cart key={ cat.id } cat={ cat } increment={ 1 }/>)
+            <Cart key={ cat.id } cat={ cat }/>)
         }
     </div>

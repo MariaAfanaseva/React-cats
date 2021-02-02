@@ -9,7 +9,7 @@ export class Cart extends React.Component {
     setLike = () => {
         this.setState((prevState, prevProps) => 
         {
-            return {likes: prevState.likes + prevProps.increment}
+            return {likes: prevState.likes + 1}
         },
             () => console.log(this.state.likes))
         }
